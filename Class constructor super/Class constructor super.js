@@ -5,10 +5,23 @@ function Holiday(destination, days){
     this.days = days
 }
 
+function hirusha(vehical , job ){
+    this.vehical = vehical
+    this.job = job
+}
+
 
 Holiday.prototype.info = function(){
     console.log(this.destination + "| " + this.days + "days");
 };
+
+hirusha.prototype.oshi = function(){
+    console.log(" my dream job is "+ this.job + " and my vechical is " + this.vehical);
+};
+
+
+var myself = new hirusha('tech lead' , 'civic');
+console.log(myself.oshi())
 
 var nepal = new  Holiday('Nepal' , 30);
 console.log(nepal.info())
@@ -29,6 +42,10 @@ class Holiday2 {
 
 const trip = new Holiday2("kathmandu, Nepal",30)
 console.log(trip.info())
+
+
+
+
 
 
 
